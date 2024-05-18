@@ -21,7 +21,7 @@ const Support = () => {
             </div>
           </div>
           <div className="right w-full lg:w-[50%] bg-white p-3 pr-4 pl-4 rounded-lg shadow-md mb-3">
-            <div className="form w-full flex flex-col   space-y-1 ">
+            <div className="form w-full flex flex-col   space-y-3 ">
               <div className="heading  font-medium">
                 You will receive response within 24 hours of time of submit.
               </div>

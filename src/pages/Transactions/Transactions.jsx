@@ -109,7 +109,7 @@ const MyTabs = () => {
             color: "black",
             borderBottom: "1px solid darkPurple",
             maxWidth: "100vw",
-            marginBottom:"10px",
+            marginBottom: "10px",
             borderRadius: "10px",
           }}
           className="flex justify-center items-center"
@@ -117,14 +117,18 @@ const MyTabs = () => {
           {TabTitle.map((tab, index) => (
             <Tab
               sx={{
-                margin:{
-                  xs:"auto",
-                  sm:"0pc 20px 0px 20px"
+               
+                margin: {
+                  sm:"0px 20px 0px 20px",
                 },
                 padding: "0px",
                 height: "20px",
-                width: "auto",
-                fontSize: "10px",
+                
+                fontSize: {
+                  xs: "10px",
+                  sm: "15px",
+                  
+                },
               }}
               key={index}
               label={`${tab.title} (${tab.count})`}

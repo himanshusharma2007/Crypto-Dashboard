@@ -42,7 +42,7 @@ const DashboardLayout = ({ title, children }) => {
   };
 
   return (
-    <div onClick={toggleAction} className="flex   w-auto h-auto">
+    <div onClick={toggleAction} className="flex relative  w-auto h-auto">
       {showSidebar ? (
         <GrClose
           onClick={handleClick}
@@ -52,7 +52,7 @@ const DashboardLayout = ({ title, children }) => {
       ) : (
         <RxHamburgerMenu
           onClick={handleClick}
-          className="lg:hidden absolute z-40 top-4 sm:top-6 left-2 cursor-pointer"
+          className="lg:hidden absolute z-40 top-4 left-2 cursor-pointer"
           fontSize="30px"
         />
       )}
@@ -64,7 +64,7 @@ const DashboardLayout = ({ title, children }) => {
           toggleAction={toggleAction}
           title={title}
         />
-        <div className="p-0 sm:pl-16 sm:pr-16 bg-   h-auto w-full">{children}</div>
+        <div className="p-0 sm:pl-16 sm:pr-16   h-auto w-full">{children}</div>
       </div>
     </div>
   );
